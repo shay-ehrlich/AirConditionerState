@@ -7,7 +7,7 @@ public class Heat implements AirConditionerState {
 
     @Override
     public void on () {
-        System.out.println("the air conditioner is already on mode heat");
+        System.out.println("The air conditioner is already on. The system in mode-heat");
     }
 
     @Override
@@ -45,7 +45,7 @@ public class Heat implements AirConditionerState {
         }
 //        airConditioner.setR_temp(temp);
 //        System.out.println("room temperature is: "+airConditioner.getR_temp());
-        System.out.format("room temperature is:", temp);
+        System.out.format("room temperature is: %d%n", temp);
     }
 
 }

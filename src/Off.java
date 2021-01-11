@@ -23,11 +23,11 @@ public class Off implements AirConditionerState{
 
     @Override
     public void setC_temp (int temp) {
-        System.out.println("Turn on");
+        System.out.println("Please Turn on first..");
     }
 
     @Override
     public void setR_temp (int temp) {
-        System.out.println("Turn on");
+        System.out.println("Please Turn on first..");
     }
 }

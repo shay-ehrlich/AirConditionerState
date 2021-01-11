@@ -9,14 +9,13 @@ public class AirConditioner {
 
 
     public AirConditioner () {
-        System.out.println("OFF");
+//        System.out.println("OFF");
         C_temp= 25;
         R_temp =25;
         cool = new Cool(this);
         heat = new Heat(this);
         off = new Off(this);
         mode = off;
-
     }
 
     enum Operation{
@@ -32,6 +31,10 @@ public class AirConditioner {
     void off(){
 
         this.mode.off();
+    }
+
+    public AirConditionerState getOff () {
+        return off;
     }
 
     void setC_temp(int temp){
@@ -58,14 +61,13 @@ public class AirConditioner {
     }
 
     public void setOperation (String operation) {
-        if ( operation =="cooling"){
+        if (operation.equals("cooling")){
             this.operation = Operation.cooling;
-
         }
-        if ( operation =="heating"){
+        if (operation.equals("heating")){
             this.operation = Operation.heating;
         }
-        if ( operation =="fanning"){
+        if (operation.equals("fanning")){
             this.operation = Operation.fanning;
         }
 

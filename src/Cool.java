@@ -11,7 +11,7 @@ public class Cool implements AirConditionerState {
 
     @Override
     public void on () {
-        System.out.println("the air conditioner is already on mode cool");
+        System.out.println("The air conditioner is already on. The system in mode-cool");
     }
 
     @Override
